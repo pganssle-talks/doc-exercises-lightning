@@ -9,3 +9,5 @@
 
 - `wiemers-kittens-unsplash.jpg` - Photo by [Jonathan Wiemers](https://unsplash.com/@jwiemers) on [Unsplash](https://unsplash.com).
 
+- `carrazana-kitten-shoe-unsplash.jpg` - Photo by [Ernesto Carrazana](https://unsplash.com/@ernestcarrazana) on [Unsplash](https://unsplash.com).
+
