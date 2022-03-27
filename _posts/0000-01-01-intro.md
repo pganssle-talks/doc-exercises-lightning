@@ -1,4 +1,4 @@
-<h1 style="font-size: 3em">Talk Title</h1>
+<h1 style="font-size: 3em">Documentation Exercises</h1>
 <br/>
 <br/>
 <br/>
@@ -11,15 +11,14 @@ Paul Ganssle
 <br/>
 <br/>
 <span style="font-size: 1em;"><em>This talk on Github:
-<a href="URL">pganssle-talks/{URL}</a></em>
+<a href="https://github.com/pganssle-talks/doc-exercises-lightning">pganssle-talks/doc-exercises-lightning</a>
 </span>
-<br/>
-<a rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/">
-    <img src="external-images/logos/cc-zero.svg" height="45px">
+<!--
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+    <img src="external-images/logos/cc-by.svg" height="45px">
 </a>
+-->
 <br/>
 
 Notes:
-
-This is where speaker notes go.
 
