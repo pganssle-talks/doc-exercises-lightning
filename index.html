@@ -44,7 +44,7 @@
 				
 				<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-notes="^Note:">
 					<textarea data-template>
-<h1 style="font-size: 3em">Talk Title</h1>
+<h1 style="font-size: 3em">Documentation Exercises</h1>
 <br/>
 <br/>
 <br/>
@@ -57,58 +57,159 @@ Paul Ganssle
 <br/>
 <br/>
 <span style="font-size: 1em;"><em>This talk on Github:
-<a href="URL">pganssle-talks/{URL}</a></em>
+<a href="https://github.com/pganssle-talks/doc-exercises-lightning">pganssle-talks/doc-exercises-lightning</a>
 </span>
-<br/>
-<a rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/">
-    <img src="external-images/logos/cc-zero.svg" height="45px">
+<!--
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+    <img src="external-images/logos/cc-by.svg" height="45px">
 </a>
+-->
 <br/>
 
 Notes:
-
-This is where speaker notes go.
 
 					</textarea>
 				</section>
 				
 				<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-notes="^Note:">
 					<textarea data-template>
-# Slide with a single heading
+# New users are not experts in your library
 
-Regular text:
+<img src="external-images/carrazana-kitten-shoe-unsplash.jpg"
+     alt="A kitten in a shoe"
+     style="max-height: 750px"
+     id="splash"
+     />
 
-- Bulleted list
-- List item
-    - Subitem
-
---
-
-# Slide with multiple headings
-
-## Heading 2
-
-1. Number one
-2. Number two
-
-## Heading 3
-
-> A blockquote
+Notes:
 
 --
 
-# Slide with code on it
+# New users are documentation experts
+
+<img src="external-images/wiemers-kittens-unsplash.jpg"
+     alt="Two curious kittens"
+     style="max-height: 750px"
+     id="splash"
+     />
+
+Notes:
+
+
+--
+
+# Mutually beneficial arrangement?
+
+<img src="external-images/oxpecker-impala.jpg"
+     alt="A red-tailed oxpecker on an impala"
+     style="max-height: 750px"
+     id="splash"
+     />
+
+Notes:
+
+					</textarea>
+				</section>
+				
+				<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-notes="^Note:">
+					<textarea data-template>
+<h1 style="font-size: 3em">Documentation Exercises</h1>
+
+<br/>
+
+<span style="font-size: 2em">
+Simple exercises or problem sets demonstrating a problem that can be solved by your project...
+<br/>
+<br/>
+
+<span style="font-size: 2em" class="fragment">...to be completed <em>only using your documentation</em>.</span>
+</span>
+
+--
+
+<img src="images/dateutil-exercises-text.png"
+     alt="Exercises: It is often useful to work through some examples in order to understand how a module works; on this page, there are several exercises of varying difficulty that you can use to learn how to use dateutil. If you are interested in helping improve the documentation of dateutil, it is recommended that you attempt to complete these exercises with no resources other than dateutil’s documentation. If you find that the documentation is not clear enough to allow you to complete these exercises, open an issue on the dateutil issue tracker to let the developers know what part of the documentation needs improvement."/>
+
+--
+
+# Next Monday meeting
+
+<blockquote>
+A team has a meeting at 10 AM every Monday and wants a function that tells them, given a `datetime.datetime` object, what is the date and time of the next Monday meeting? This is probably best accomplished using a [relativedelta](https://dateutil.readthedocs.io/en/stable/relativedelta.html).
+</blockquote>
+
+<br/>
 
 ```python
-import sys
+# --------- YOUR CODE -------------- #
+from dateutil import relativedelta
 
-def f():
-    print(sys.version_info())
+def next_monday(dt):
+    <<YOUR CODE HERE>>
+
+# ---------------------------------- #
+
+from datetime import datetime
+from dateutil import tz
+
+NEXT_MONDAY_CASES = [
+    ...     # Skipped test cases for space reasons
+]
+
+def test_next_monday_1():
+    for dt_in, dt_out in NEXT_MONDAY_CASES:
+        assert next_monday(dt_in) == dt_out
+
+if __name__ == "__main__":
+    test_next_monday_1()
+    print('Success!')
 ```
 
-<pre>
-(3, 9, 0)
-</pre>
+<!-- .element: class="fragment" -->
+
+					</textarea>
+				</section>
+				
+				<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-notes="^Note:">
+					<textarea data-template>
+# `dateutil` experience
+
+<img src="images/dateutil-documentation-issues.png"
+     alt="Github documentation PRs"
+     id="ghscreenshot"
+     />
+
+--
+
+# `dateutil` experience
+
+<img src="images/dateutil-tuple-doc-fix.png"
+     alt="Github PR: Tuple documentation fix"
+     id="ghscreenshot"
+     />
+
+					</textarea>
+				</section>
+				
+				<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-notes="^Note:">
+					<textarea data-template>
+# Why you should do this?
+
+- Great way to onboard people at sprints
+
+- Signals to your users that you value their experience.
+
+- Signals that they can contribute <em>from day 1</em>.
+
+<br/>
+<br/>
+<h1 class="fragment">I'm convinced - what else can I do? </h1>
+<br/>
+<br/>
+
+<span class="fragment" style="font-size: 2em">
+    <b>Spread the word!</b>
+</span>
 
 					</textarea>
 				</section>
